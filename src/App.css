@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.App {
+  text-align: center;
+  background-color: #EEE;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: calc(10px + 2vmin);
+  color: rgb(0, 0, 0);
+}
+
+input {
+  padding: 10px 20px;
+  margin: 5px 10px;
+}
+
+label {
+  text-align: right;
+  font-size: 1.2em;
+}
+
+.input-text {
+  grid-area: text;
+}
+
+.input-check {
+  grid-area: check;
+}
+
+.city {
+  grid-area: city;
+}
+
+.imperial {
+  grid-area: imperial;
+}
+
+.form-space {
+  display: grid;
+  grid-template-areas: 
+  'city text'
+  'imperial check';
+  grid-template-columns: 1fr 1fr;
+}
+
+.cities-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.city {
+  margin: 10px;
+}
